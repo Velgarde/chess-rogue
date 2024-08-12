@@ -85,17 +85,17 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 90vmin;
+  max-width: 100vmin;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 5px;
 `,f0=B.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   width: 100%;
   aspect-ratio: 1 / 1;
-  max-width: 90vmin;
-  max-height: 90vmin;
-  border: 4px solid #61dafb;
+  max-width: 100vmin;
+  max-height: 100vmin;
+  border: 2px solid #61dafb;
   box-shadow: 0 0 20px rgba(97, 218, 251, 0.3);
   transition: all 0.3s ease;
   overflow: hidden;
@@ -104,15 +104,8 @@ Error generating stack: `+o.message+`
     box-shadow: 0 0 30px rgba(97, 218, 251, 0.5);
   }
 
-  @media (max-width: 768px) {
-    max-width: 95vmin;
-    max-height: 95vmin;
-  }
-
   @media (max-width: 480px) {
-    max-width: 100%;
-    max-height: 100vmin;
-    border-width: 2px;
+    border-width: 1px;
   }
 `,d0=B.div`
   aspect-ratio: 1;
