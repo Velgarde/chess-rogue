@@ -84,7 +84,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120%;
+  width: 100%;
   max-width: 100vmin;
   margin: 0 auto;
   padding: 0.5rem;
