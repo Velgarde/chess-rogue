@@ -86,7 +86,7 @@ Error generating stack: `+o.message+`
   align-items: center;
   width: 100%;
   max-width: 100vmin;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0;
 `,f0=B.div`
   display: grid;
