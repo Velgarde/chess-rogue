@@ -84,14 +84,14 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 120%;
   max-width: 100vmin;
   margin: 0 auto;
   padding: 0.5rem;
 `,f0=B.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  width: 120%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   max-width: 100vmin;
   max-height: 100vmin;
