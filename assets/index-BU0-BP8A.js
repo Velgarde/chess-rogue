@@ -86,12 +86,12 @@ Error generating stack: `+o.message+`
   align-items: center;
   width: 100%;
   max-width: 100vmin;
-  margin: 1rem auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0.5rem;
 `,f0=B.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  width: 100%;
+  width: 120%;
   aspect-ratio: 1 / 1;
   max-width: 100vmin;
   max-height: 100vmin;
