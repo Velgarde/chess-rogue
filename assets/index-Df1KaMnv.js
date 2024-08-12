@@ -85,16 +85,16 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 90vmin;
   margin: 0 auto;
-  padding: 0 10px; // Add padding to prevent board from touching screen edges
+  padding: 0 10px;
 `,f0=B.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  width: 100%; // Change to 100% to make it fully responsive
-  aspect-ratio: 1 / 1; // Maintain square aspect ratio
-  max-width: 600px;
-  max-height: 600px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 90vmin;
+  max-height: 90vmin;
   border: 4px solid #61dafb;
   box-shadow: 0 0 20px rgba(97, 218, 251, 0.3);
   transition: all 0.3s ease;
@@ -105,13 +105,14 @@ Error generating stack: `+o.message+`
   }
 
   @media (max-width: 768px) {
-    max-width: 90vmin;
-    max-height: 90vmin;
+    max-width: 95vmin;
+    max-height: 95vmin;
   }
 
   @media (max-width: 480px) {
-    max-width: 95vmin;
-    max-height: 95vmin;
+    max-width: 100%;
+    max-height: 100vmin;
+    border-width: 2px;
   }
 `,d0=B.div`
   aspect-ratio: 1;
