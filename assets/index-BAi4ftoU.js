@@ -169,15 +169,20 @@ Error generating stack: `+o.message+`
 `,h0=()=>{const{board:e,currentPlayer:t,movePiece:n,handlePromotion:r,getValidMovesForPiece:l,isInCheck:o,isGameOver:i,winner:u,roles:s}=_o(),[a,h]=pe.useState(null),[m,p]=pe.useState([]),[g,v]=pe.useState(null);pe.useEffect(()=>{p(a?l(a):[])},[a,l]);const w=(c,f)=>{const y=e[c][f];if(a)if(z(c,f)){const k=e[c][f];k&&(v({type:k.type,player:k.player,position:{row:c,col:f}}),setTimeout(()=>v(null),500));const C=e[a.row][a.col];if(C){const S=s[C.type]==="pawn"&&(c===0||c===7);if(n(a,{row:c,col:f}),S){const P=Sd();r({row:c,col:f},P)}}h(null)}else y&&y.player===t?h({row:c,col:f}):h(null);else y&&y.player===t&&h({row:c,col:f})},z=(c,f)=>m.some(y=>y.row===c&&y.col===f),d=(c,f)=>{const y=e[c][f];return!!(y&&y.type==="king"&&y.player===t&&o)};return O.jsxs(c0,{children:[O.jsx(f0,{children:e.map((c,f)=>c.map((y,k)=>O.jsxs(d0,{isLight:(f+k)%2===0,isSelected:(a==null?void 0:a.row)===f&&(a==null?void 0:a.col)===k,isValidMove:z(f,k),isCheck:d(f,k),onClick:()=>w(f,k),children:[y&&O.jsx(p0,{player:y.player,children:Oa(s[y.type],y.player)}),d(f,k)&&O.jsx(s0,{}),g&&g.position.row===f&&g.position.col===k&&O.jsx(u0,{player:g.player,children:Oa(s[g.type],g.player)})]},`${f}-${k}`)))}),i&&O.jsx(a0,{children:u?`Checkmate - ${u.charAt(0).toUpperCase()+u.slice(1)} wins!`:"Stalemate - Draw!"})]})},Oa=(e,t)=>({pawn:{white:"♙",black:"♟︎"},rook:{white:"♖",black:"♜"},knight:{white:"♘",black:"♞"},bishop:{white:"♗",black:"♝"},queen:{white:"♕",black:"♛"},king:{white:"♔",black:"♚"}})[e][t],m0=B.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 100vmin;
+  width: 80vmin;
+  max-width: 600px;
   margin-bottom: 0.5rem;
   user-select: none;
 
   @media (max-width: 768px) {
+    width: 90vmin;
     flex-direction: row;
     align-items: center;
     margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 95vmin;
   }
 `,Ta=B.div`
   display: flex;
