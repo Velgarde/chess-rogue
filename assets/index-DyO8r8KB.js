@@ -171,7 +171,7 @@ Error generating stack: `+o.message+`
   justify-content: space-between;
   width: 80vmin;
   max-width: 600px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   user-select: none;
 
   @media (max-width: 768px) {
@@ -396,7 +396,7 @@ Error generating stack: `+o.message+`
     font-family: 'Roboto', sans-serif;
 
     @media (max-width: 768px) {
-        padding: 0.25rem;
+        padding: 0.75rem;
     }
 `,L0=B.h1`
     font-size: 2.5rem;
