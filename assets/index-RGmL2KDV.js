@@ -85,16 +85,19 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 100vmin;
+  max-width: 600px;
   margin: 1rem auto;
   padding: 0.5rem;
+
+  @media (max-width: 768px) {
+    max-width: 95vw;
+    padding: 0.25rem;
+  }
 `,f0=B.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   width: 100%;
   aspect-ratio: 1 / 1;
-  max-width: 100vmin;
-  max-height: 100vmin;
   border: 2px solid #61dafb;
   box-shadow: 0 0 20px rgba(97, 218, 251, 0.3);
   transition: all 0.3s ease;
